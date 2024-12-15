@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h2>Student Registration</h2>
+    <form action="submit_registration.php" method="post">
+        <table>
+            <!-- Username Field -->
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+
+            <!-- Password Field -->
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <!-- Course Selection -->
+            <tr>
+                <td>Courses:</td>
+                <td>
+                    <select name="course" required>
+                        <option value="" disabled selected>Select a Course</option>
+                        <option value="btech_cse">B.Tech in Computer Science</option>
+                        <option value="btech_ece">B.Tech in Electronics and Communication</option>
+                        <option value="btech_mech">B.Tech in Mechanical Engineering</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
